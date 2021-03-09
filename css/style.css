@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    margin-top: 10px;
+    font-family: var(--font1);
+    height: 74px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    margin: 0px 34px;
+    margin-bottom: 12px;
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font2);
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left ul li a:hover {
+    color: var(--main-bg-color);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.content {
+    height: 100%;
+    /* background-color: rgb(255, 234, 196); */
+    display: flex;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.content::after {
+    content: "";
+    background-image: url(../img/11.svg);
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    border-radius: 12px;
+}
+
+.content-left {
+    font-family: var(--font1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    z-index: 1;
+}
+
+.content-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-right img {
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 200px;
+}
+
+.home-articles {
+    background-color: rgb(255 249 240);
+    padding: 18px;
+    margin-top: 23px;
+    position: relative;
+}
+
+.year-box {
+    position: absolute;
+    width: 235px;
+    height: 250px;
+    /* background-color: red; */
+    right: 90px;
+    top: 100px;
+    font-size: 18px;
+}
+
+.year-box div {
+    margin: 10px 0px;
+}
+
+.home-article {
+    display: flex;
+    margin: 10px;
+}
+
+.home-article img {
+    width: 200px;
+}
+
+.home-article-content {
+    align-self: center;
+    padding: 25px;
+}
+
+.home-article-content a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    height: 50px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
